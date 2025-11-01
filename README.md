@@ -35,7 +35,7 @@ The URL should look like this:
 
 <https://www.notion.so/your_username/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx?v=vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv>
 
-The long string after the last slash (in this case, xxxxxxxxxxxxxxxxxxxxxxxxxx) is the Database ID.
+The long string after the last slash and before ?v= (in this case, xxxxxxxxxxxxxxxxxxxxxxxxxx) is the Database ID.
 
 ### 3. Update the Script
 
