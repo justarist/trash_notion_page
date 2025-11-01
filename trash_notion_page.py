@@ -57,7 +57,7 @@ def trash_page(page_id):
         print(f"Error while archiving page {page_id}: {response.status_code}")
         print(f"Response body: {response.text}")
 
-def trash_pages_by_status(property: str, property_name: str, property_value: str):
+def trash_pages_by_property(property: str, property_name: str, property_value: str):
     pages = get_pages_from_database(property, property_name, property_value)
 
     for page in pages:
@@ -71,4 +71,4 @@ def trash_pages_by_status(property: str, property_name: str, property_value: str
                 trash_page(page_id)
 
 if __name__ == "__main__":
-    trash_pages_by_status("status", "Status", "Done") # Example
+    trash_pages_by_property("status", "Status", "Done") # Example
